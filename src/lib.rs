@@ -39,10 +39,6 @@ impl Queen {
         let vertical = (player_one.file - player_two.file).abs();     // they both account for diagonal position
 
 
-        if player_one.rank == player_two.rank || player_one.file == player_two.file || horizontal == vertical {
-            true
-        } else {
-            false
-        }
+        player_one.rank == player_two.rank || player_one.file == player_two.file || horizontal == vertical
     }
 }
